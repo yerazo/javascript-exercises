@@ -4,7 +4,13 @@
     <h1>Exercise 14</h1>
     <script>
       var numbers = [5,39,29,29,5,12,67,73,12,12];
-      // Write your code here
+      var uniqueNumbers = [];
+      for(var i = 0; i < numbers.length; i++){
+      	if(uniqueNumbers.indexOf(numbers[i]) === -1){
+      		uniqueNumbers.push(numbers[i]);
+      	}
+      }
+      console.log(uniqueNumbers);
     </script>
   </body>
 </html>
