@@ -3,11 +3,31 @@
   <body>
     <h1>Exercise 9</h1>
     <script>
-      var grades = [44, 94, 95, 72, 89, 70, 99, 83];
+	  var grades = [44, 94, 95, 72, 89, 70, 99, 83];
+      var result = "";
       for(var i = 0; i < grades.length; i++){
-      	console.log(grades[i]);
-      }
 
+      	if(grades[i] > 95){
+            result = grades[i] + " = A";
+      	
+      	}else if(grades[i] >= 88){
+      	    result = grades[i] + " = B";
+      	    
+      	}else if(grades[i] >= 80){
+      	    result = grades[i] + " = C";
+      	    
+      	}else if(grades[i] >= 72){
+      	    result = grades[i] + " = D";
+      	    
+      	}else if(grades[i] >= 65){
+      	    result = grades[i] + " = E";
+      	    
+      	}else{(grades[i] < 65);
+      	    result = grades[i] + " = F";
+      	}
+        console.log(result);
+      }
+	     
     </script>
   </body>
 </html>

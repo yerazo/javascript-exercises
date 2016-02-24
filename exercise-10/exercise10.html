@@ -23,9 +23,27 @@
       ];
 
       for(var i = 0; i < students.length; i++){
-          console.log(students[i]); 
-      }
-      console.log(students["name:"] + students.grade);
+        if(students[i].grade > 95){
+            result = students[i].name + "A";
+        
+        }else if(students[i].grade >= 88){
+            result = students[i].name + "B";
+            
+        }else if(students[i].grade >= 80){
+            result = students[i].name + "C";
+            
+        }else if(students[i].grade >= 72){
+            result = students[i].name + "D";
+            
+        }else if(students[i].grade >= 65){
+            result = students[i].name + "E";
+            
+        }else{(students[i].grade < 65);
+            result = students[i].name + "F";
+        }
+        console.log(result);
+  
+      };
     </script>
   </body>
 </html>

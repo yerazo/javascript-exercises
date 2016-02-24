@@ -3,16 +3,19 @@
   <body>
     <h1>Exercise 6</h1>
     <script>
-
     	for(var i = 0; i <=100; i++){
     		var result = '';
-    		if (i %  3==0){
-    			result = "fizz";
-    		}
-    		if (i % 5==0){
-    			result += "buzz";
-    		}
-    		console.log(result);
+    		if (i %  3===0 && i % 5===0){
+    			result = "FizzBuzz";
+    		}else if (i %  3===0){
+                result = "Fizz";
+            }else if (i % 5===0){
+                result += "Buzz";
+            }else {
+                result = i;
+            }
+            console.log(result);
+
     	}
 
     </script>
